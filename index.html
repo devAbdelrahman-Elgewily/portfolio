@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Abdelrahman Elgewily</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f1f1f1;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .gradient-text {
+      background: linear-gradient(to right, #4fd1c5, #9f7aea);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .button-dark {
+      @apply bg-gray-700 text-white border border-teal-400 px-5 py-2.5 rounded flex items-center gap-2 transition duration-300 transform hover:bg-teal-400 hover:text-gray-900 hover:scale-105 shadow-md;
+    }
+    .dark-card {
+      @apply bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-700 transition transform hover:scale-105 hover:shadow-xl duration-300;
+    }
+    .card-title {
+      @apply text-2xl font-bold text-white border-b border-teal-400 pb-2 mb-4;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .bordered-section {
+      @apply border border-gray-600 p-6 rounded-lg bg-gray-900;
+      border-width: 2px;
+      border-color: #06514a;
+      padding: 1.5rem;
+      border-radius: 1rem;
+
+    }
+    .box-shadow {
+      box-shadow: 0px 4px 10px rgba(0, 255, 200, 0.3);
+    }
+    .hover-effect {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+    }
+    .hover-effect:hover {
+      transform: scale(1.05);
+    }
+    .profile-img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .profile-img:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 4px 10px rgba(0, 255, 200, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-gray-900 z-50 border-b border-gray-800 shadow-lg">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="./index.html">
+          <h1 class="text-4xl font-bold gradient-text hover:scale-105 transition-transform duration-300">AE</h1>
+        </a>
+        <div class="flex gap-6">
+          <a href="./Project.html" class="button-dark">Projects</a>
+          <a href="./Contact.html" class="button-dark">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-24 px-6 max-w-6xl mx-auto space-y-12">
+      <!-- Profile Section -->
+      <section class="dark-card text-center flex flex-col items-center">
+        <img src="./ProfilePic.jpg" alt="Abdelrahman" class="w-32 h-32 rounded-full border-4 border-gray-700 mb-4 shadow-md profile-img" />
+        <h2 class="text-3xl font-bold">Abdelrahman Elgewily</h2>
+        <p class="text-lg text-gray-400">AI & ML Student Researcher</p>
+        <p class="text-sm text-gray-300 max-w-md">Computer Science student specializing in AI with hands-on ML & Data Science experience.</p>
+        <div class="flex gap-20 mt-6">
+          <a class="button-dark justify-items-center" href="mailto:dev.abdelrahman.elgewily@gmail.com">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="w-5 h-5">
+            <span class="text-btn">Contact</span>
+          </a>
+          <a class="button-dark justify-items-center" href="https://www.linkedin.com/in/abdelrahmanelgewily/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-5 h-5"> 
+            <span class="text-btn">LinkedIn</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Quick Stats Section -->
+      <section class="dark-card bordered-section box-shadow">
+        <h3 class="card-title">Quick Stats</h3>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li class="flex items-center gap-2">
+            <span class="text-teal-400">📊</span>
+            <strong>Experience:</strong> 1+ Year
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-teal-400">🎓</span>
+            <strong>Education:</strong> B.Sc. Computer Science (AI)
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-teal-400">🔬</span>
+            <strong>Focus Area:</strong> ML & Data Science
+          </li>
+        </ul>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="dark-card bordered-section box-shadow">
+        <h3 class="card-title">Skills</h3>
+        <ul class="space-y-4 text-gray-400">
+          <li class="flex items-center gap-2">
+            <span class="text-teal-400">💻</span>
+            AI/ML: TensorFlow, PyTorch, Scikit-learn
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-teal-400">📊</span>
+            Data Science: Python, Pandas, NumPy
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-teal-400">📈</span>
+            Analytics: Data Analysis, Statistics, Visualization
+          </li>
+        </ul>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="dark-card bordered-section box-shadow">
+        <h3 class="card-title">Featured Projects</h3>
+        <ul class="space-y-4">
+          <li class="p-4 bg-gray-700 rounded-lg border border-gray-600 hover:bg-gray-600 transition shadow-md  hover-effect">
+            <strong>ML Model Deployment</strong> - TensorFlow, Flask (95% Accuracy)
+          </li>
+          <li class="p-4 bg-gray-700 rounded-lg border border-gray-600 hover:bg-gray-600 transition shadow-md  hover-effect">
+            <strong>Data Analysis Pipeline</strong> - Python, Pandas (2x Efficiency)
+          </li>
+          <li class="p-4 bg-gray-700 rounded-lg border border-gray-600 hover:bg-gray-600 transition shadow-md  hover-effect">
+            <strong>AI Research Project</strong> - PyTorch, NumPy (Published)
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="dark-card text-center p-6">
+        <p class="text-gray-400 text-sm">Contact: dev.abdelrahman.elgewily@gmail.com</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

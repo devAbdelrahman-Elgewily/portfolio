@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+    .gradient-text {
+      background: linear-gradient(to right, #4fd1c5, #9f7aea);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .dark-card {
+      background-color: #1e293b;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+        margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen flex flex-col items-center justify-center">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-gray-900 z-50 border-b border-gray-800 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+          
+            <h1 class="text-4xl font-bold gradient-text hover:scale-105 transition-transform duration-300"><a href="./index.html">AE</a></h1>
+          <div class="flex gap-6">
+            <a href="./Project.html" class="button-dark">Projects</a>
+            <a href="./Contact.html" class="button-dark">Contact</a>
+          </div>
+        </div>
+      </nav>
+    
+    <!-- Contact Section -->
+    <section class="w-full max-w-2xl dark-card text-center flex flex-col gap-4 justify-items-center ">
+      <h2 class="text-2xl font-semibold">Get in Contact</h2>
+      <p class="text-gray-400">Feel free to reach out to me via any of the platforms below.</p>
+      <div class="space-y-3">
+        <p class="text-gray-300">📧 Email: <a href="mailto:dev.abdelrahman.elgewily@gmail.com" class="text-blue-400" target="_blank">dev.abdelrahman.elgewily@gmail.com</a></p>
+        <p class="text-gray-300">🔗 LinkedIn: <a href="https://www.linkedin.com/in/abdelrahmanelgewily/" class="text-blue-400" target="_blank">linkedin.com/in/abdelrahmanelgewily</a></p>
+        <p class="text-gray-300">💻 GitHub: <a href="https://github.com/devAbdelrahman-Elgewily" class="text-blue-400" target="_blank">github.com/devAbdelrahman-Elgewily</a></p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
