@@ -65,33 +65,31 @@
         </a>
         <div class="flex gap-6">
           <a href="./Project.html" class="button-dark">Projects</a>
-          <a href="./Contact.html" class="button-dark">Contact</a>
+          <!-- <a href="./Resume.html" class="button-dark">My Resume</a> -->
         </div>
       </div>
     </nav>
 
     <main class="pt-24 px-6 max-w-6xl mx-auto space-y-12">
+      
       <!-- Profile Section -->
       <section class="dark-card text-center flex flex-col items-center">
         <img src="./ProfilePic.jpg" alt="Abdelrahman" class="w-32 h-32 rounded-full border-4 border-gray-700 mb-4 shadow-md profile-img" />
         <h2 class="text-3xl font-bold">Abdelrahman Elgewily</h2>
-        <p class="text-lg text-gray-400">AI & ML Student Researcher</p>
-        <p class="text-sm text-gray-300 max-w-md">Computer Science student specializing in AI with hands-on ML & Data Science experience.</p>
+        <p class="text-lg text-gray-400">AI & ML Researcher</p>
+        <p class="text-sm text-gray-300 max-w-md">I specialize in AI with hands-on ML & Data Science experience.</p>
         <div class="flex gap-20 mt-6">
-          <a class="button-dark justify-items-center" href="mailto:dev.abdelrahman.elgewily@gmail.com">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="w-5 h-5">
-            <span class="text-btn">Contact</span>
-          </a>
-          <a class="button-dark justify-items-center" href="https://www.linkedin.com/in/abdelrahmanelgewily/" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-5 h-5"> 
-            <span class="text-btn">LinkedIn</span>
-          </a>
         </div>
       </section>
 
-      <!-- Quick Stats Section -->
+      <!-- About Me Section -->
       <section class="dark-card bordered-section box-shadow">
-        <h3 class="card-title">Quick Stats</h3>
+        <h3 class="card-title">About Me</h3>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li class="flex items-center gap-2">
+            <span class="text-teal-400"><i>I started with game development as a teen and now build ML models that analyze data. I enjoy creating software, improving ML algorithms, and enhancing user experiences. With experience in game dev, web apps, and AI, I’m passionate about using tech to solve real-world problems and push boundaries.</i></span>
+          </li>
+        </ul>
         <ul class="space-y-2 text-sm text-gray-300">
           <li class="flex items-center gap-2">
             <span class="text-teal-400">📊</span>
@@ -108,9 +106,9 @@
         </ul>
       </section>
 
-      <!-- Skills Section -->
+      <!-- Technical Skills Section -->
       <section class="dark-card bordered-section box-shadow">
-        <h3 class="card-title">Skills</h3>
+        <h3 class="card-title">Technical Skills</h3>
         <ul class="space-y-4 text-gray-400">
           <li class="flex items-center gap-2">
             <span class="text-teal-400">💻</span>
@@ -127,27 +125,127 @@
         </ul>
       </section>
 
-      <!-- Projects Section -->
-      <section id="projects" class="dark-card bordered-section box-shadow">
-        <h3 class="card-title">Featured Projects</h3>
-        <ul class="space-y-4">
-          <li class="p-4 bg-gray-700 rounded-lg border border-gray-600 hover:bg-gray-600 transition shadow-md  hover-effect">
-            <strong>Fake News analyzer</strong> - Pandas, NumPy, Scikit-learn (94% Accuracy)
-          </li>
-          <li class="p-4 bg-gray-700 rounded-lg border border-gray-600 hover:bg-gray-600 transition shadow-md  hover-effect">
-            <strong>Tic-Tac-Toe Game</strong> - Jave, Swing 
-          </li>
-          <li class="p-4 bg-gray-700 rounded-lg border border-gray-600 hover:bg-gray-600 transition shadow-md  hover-effect">
-            <strong>Data Analysis Course</strong> - Python, Pandas, Numpy, Matplotlib, Seaborn
-          </li>
-        </ul>
-      </section>
+            <!-- Soft Skills Section -->
+            <section class="dark-card bordered-section box-shadow">
+              <h3 class="card-title">Soft Skills</h3>
+              <ul class="space-y-4 text-gray-400">
+                <li class="flex items-center gap-2">
+                  <span class="text-teal-400">💻</span>
+                  Communication: Teamwork, Collaboration, Leadership
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-teal-400">📊</span>
+                  Problem Solving: Critical Thinking, Creativity, Adaptability
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-teal-400">📈</span>
+                  preparing reports, presentations, and technical documentation
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-teal-400">📊</span>
+                  Time Management: Prioritization, Planning, Organization
+                </li>
+              </ul>
+            </section>
+
+<!-- Projects Section -->
+<section id="projects" class="dark-card bordered-section box-shadow p-6 rounded-lg">
+  <!-- Section Title with Gradient -->
+  <h3 class="text-3xl font-bold text-center mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 text-transparent bg-clip-text">
+    Featured Projects
+  </h3>
+  
+  <p class="text-gray-400 text-center text-sm mb-6">
+    Click on the <strong class="text-white">Projects</strong> tab to check out more of my work on GitHub.
+  </p>
+
+  <ul class="space-y-6">
+    <!-- Project 1: Fake News Analyzer -->
+    <li class="p-6 bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-700 transition shadow-lg hover:scale-105">
+      <strong class="text-lg text-white">Fake News Analyzer</strong>  
+      <p class="text-gray-300 text-sm">Pandas, NumPy, Scikit-learn (94% Accuracy)</p>
+
+      <!-- GitHub Repo Button -->
+      <div class="mt-4 flex justify-center">
+        <a href="https://github.com/devAbdelrahman-Elgewily/ML-Projects" 
+           class="bg-cyan-500 text-white px-5 py-2 rounded-lg transition duration-300 shadow-md 
+                  border-2 border-transparent hover:bg-sky-400 hover:text-black hover:border-white" target="_blank">
+          GitHub Repo
+        </a>
+      </div>
+    </li>
+    
+    <!-- Project 2: Tic-Tac-Toe Game -->
+    <li class="p-6 bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-700 transition shadow-lg hover:scale-105">
+      <strong class="text-lg text-white">Tic-Tac-Toe Game</strong>  
+      <p class="text-gray-300 text-sm">Java, Swing</p>
+
+      <!-- GitHub Repo Button -->
+      <div class="mt-4 flex justify-center">
+        <a href="https://github.com/devAbdelrahman-Elgewily/Tic-Tac-Toe-Game" 
+           class="bg-cyan-500 text-white px-5 py-2 rounded-lg transition duration-300 shadow-md 
+                  border-2 border-transparent hover:bg-sky-400 hover:text-black hover:border-white" target="_blank">
+          GitHub Repo
+        </a>
+      </div>
+    </li>
+
+    <!-- Project 3: Data Analysis Course -->
+    <li class="p-6 bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-700 transition shadow-lg hover:scale-105">
+      <strong class="text-lg text-white">Data Analysis Course</strong>  
+      <p class="text-gray-300 text-sm">Python, Pandas, NumPy, Matplotlib, Seaborn</p>
+
+      <!-- GitHub Repo Button -->
+      <div class="mt-4 flex justify-center">
+        <a href="https://github.com/devAbdelrahman-Elgewily/DEPI-Assignments-" 
+           class="bg-teal-500 text-white px-5 py-2 rounded-lg transition duration-300 shadow-md 
+                  hover:bg-blue-400 hover:text-gray-900" target="_blank">
+          GitHub Repo
+        </a>
+      </div>
+    </li>
+  </ul>
+</section>
+
+
 
       <!-- Contact Section -->
-      <section id="contact" class="dark-card text-center p-6">
-        <p class="text-gray-400 text-sm">All Rights Reserved</p>
-      </section>
+<!-- Contact Section -->
+<section id="contact" class="dark-card bordered-section box-shadow text-center">
+  <h3 class="card-title">Get in Touch</h3>
+  <p class="text-gray-400 mb-4">Feel free to reach out to me via any of the platforms below.</p>
+  
+  <div class="space-y-4">
+    <p class="text-gray-300 flex items-center justify-center gap-2">
+      📧 <strong>Email:</strong> 
+      <a href="mailto:dev.abdelrahman.elgewily@gmail.com" class="text-teal-400 hover:underline">
+        dev.abdelrahman.elgewily@gmail.com
+      </a>
+    </p>
+    
+    <p class="text-gray-300 flex items-center justify-center gap-2">
+      🔗 <strong>LinkedIn:</strong> 
+      <a href="https://www.linkedin.com/in/abdelrahmanelgewily/" class="text-teal-400 hover:underline" target="_blank">
+        linkedin.com/in/abdelrahmanelgewily
+      </a>
+    </p>
+    
+    <p class="text-gray-300 flex items-center justify-center gap-2">
+      💻 <strong>GitHub:</strong> 
+      <a href="https://github.com/devAbdelrahman-Elgewily" class="text-teal-400 hover:underline" target="_blank">
+        github.com/devAbdelrahman-Elgewily
+      </a>
+    </p>
+    
+    <p class="text-gray-300 flex items-center justify-center gap-2">
+      📞 <strong>Phone:</strong> +20 1019640087
+    </p>
+  </div>
+    </a>
+  </div>
+</section>
     </main>
   </div>
+  <div class="h-10"></div>
 </body>
 </html>
