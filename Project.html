@@ -11,6 +11,7 @@
       color: #f1f1f1;
     }
 
+    
     .gradient-text {
       background: linear-gradient(to right, #4fd1c5, #9f7aea);
       -webkit-background-clip: text;
@@ -69,6 +70,15 @@
         grid-template-columns: 1fr;
       }
     }
+
+    .button-dark {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.button-dark:hover {
+  color: #4fd1c5; /* Subtle hover effect */
+}
   </style>
 </head>
 <body>
@@ -83,7 +93,7 @@
           </a>
           <div class="flex gap-6">
             <a href="./Project.html" class="button-dark">Projects</a>
-          <!-- <a href="./Resume.html" class="button-dark">My Resume</a> -->
+           <a href="./Resume.html" class="button-dark">My Resume</a> 
         </div>
         </div>
       </nav>
@@ -98,12 +108,12 @@
 
           <!-- Project 1 -->
 <div class="dark-card project-card">
-  <h3 class="card-title">Data Analysis Course</h3>
-  <p class="text-sm text-gray-400 mb-3">Analysis of some data and Visualization</p>
-  <div class="text-sm text-gray-400 mb-4">Python, Numpy, Pandas, Matplotlib, Seaborn</div>
-  <p class="text-gray-300">These Assignments Analyse data and visualize them using python</p>
+  <h3 class="card-title">Fake News Detector ML Model</h3>
+  <p class="text-sm text-gray-400 mb-3">A Model that desides if an article is fake or real</p>
+  <div class="text-sm text-gray-400 mb-4"> Python, Scikit-learn</div>
+  <p class="text-gray-300">this model has an accuracy of 92% and can detect if a article is real or fake</p>
   <div class="mt-4 flex gap-4 justify-center">
-    <a href="https://github.com/devAbdelrahman-Elgewily/DEPI-Assignments-" class="project-btn" target="_blank">GitHub Repo</a>
+    <a href="https://github.com/devAbdelrahman-Elgewily/ML-Projects" class="project-btn" target="_blank">GitHub Repo</a>
   </div>
 </div>
 
@@ -121,12 +131,23 @@
 
 <!-- Project 3 -->
 <div class="dark-card project-card">
-  <h3 class="card-title">ML Project</h3>
-  <p class="text-sm text-gray-400 mb-3">A code that is trained on a dataset containing fake and real news</p>
-  <div class="text-sm text-gray-400 mb-4">Tech Stack: Pandas, NumPy, Scikit-learn</div>
-  <p class="text-gray-300">This project has high accuracy and can determine if a news article is real or fake by just giving it the article or link</p>
+  <h3 class="card-title">License Plate Detection and Extraction Model</h3>
+  <p class="text-sm text-gray-400 mb-3">A model that detects license plates in static images and extracts the plate.</p>
+  <div class="text-sm text-gray-400 mb-4"> Python, CV2, pytourch, Matplotlib, numpy, Yolov8, paddleOCR</div>
+  <p class="text-gray-300">This project has high accuracy and can detect and extract english and arabic license plates.</p>
   <div class="mt-4 flex gap-4 justify-center">
-    <a href="https://github.com/devAbdelrahman-Elgewily/ML-Projects" class="project-btn" target="_blank">GitHub Repo</a>
+    <a href="https://github.com/devAbdelrahman-Elgewily/License-Plate-Image-Detection-and-Extraction" class="project-btn" target="_blank">GitHub Repo</a>
+  </div>
+</div>
+
+<!-- Project 4 -->
+<div class="dark-card project-card">
+  <h3 class="card-title">3D 4x4x4 Tic Tac Toe Python Game</h3>
+  <p class="text-sm text-gray-400 mb-3">A tic tac toe game made with python using multiple algorithms to make a Ai vs. Player game</p>
+  <div class="text-sm text-gray-400 mb-4"> Python, Minimax algorithm, Alpha-beta pruning, Herustic Functions, pygame</div>
+  <p class="text-gray-300"> A 3D 4x4x4 Tic Tac Toe game developed using Python and Pygame. The game features a human vs AI mode, where the AI is implemented using the Minimax algorithm with Alpha-Beta Pruning for optimal performance. A custom heuristic function was used to evaluate board states, enabling the AI to make fast and strategic decisions. The result is a smooth and responsive gameplay experience that highlights both game development and AI search techniques. </p>
+  <div class="mt-4 flex gap-4 justify-center">
+    <a href="https://github.com/devAbdelrahman-Elgewily/Tic-Tac-Toe-Python-Proj" class="project-btn" target="_blank">GitHub Repo</a>
   </div>
 </div>
 

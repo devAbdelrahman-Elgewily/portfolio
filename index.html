@@ -53,6 +53,15 @@
       transform: scale(1.1);
       box-shadow: 0px 4px 10px rgba(0, 255, 200, 0.5);
     }
+
+    .button-dark {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.button-dark:hover {
+  color: #4fd1c5; /* Subtle hover effect */
+}
   </style>
 </head>
 <body>
@@ -65,7 +74,7 @@
         </a>
         <div class="flex gap-6">
           <a href="./Project.html" class="button-dark">Projects</a>
-          <!-- <a href="./Resume.html" class="button-dark">My Resume</a> -->
+           <a href="./Resume.html" class="button-dark">My Resume</a> 
         </div>
       </div>
     </nav>
@@ -148,69 +157,7 @@
               </ul>
             </section>
 
-<!-- Projects Section -->
-<section id="projects" class="dark-card bordered-section box-shadow p-6 rounded-lg">
-  <!-- Section Title with Gradient -->
-  <h3 class="text-3xl font-bold text-center mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 text-transparent bg-clip-text">
-    Featured Projects
-  </h3>
-  
-  <p class="text-gray-400 text-center text-sm mb-6">
-    Click on the <strong class="text-white">Projects</strong> tab to check out more of my work on GitHub.
-  </p>
-
-  <ul class="space-y-6">
-    <!-- Project 1: Fake News Analyzer -->
-    <li class="p-6 bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-700 transition shadow-lg hover:scale-105">
-      <strong class="text-lg text-white">Fake News Analyzer</strong>  
-      <p class="text-gray-300 text-sm">Pandas, NumPy, Scikit-learn (94% Accuracy)</p>
-
-      <!-- GitHub Repo Button -->
-      <div class="mt-4 flex justify-center">
-        <a href="https://github.com/devAbdelrahman-Elgewily/ML-Projects" 
-           class="bg-cyan-500 text-white px-5 py-2 rounded-lg transition duration-300 shadow-md 
-                  border-2 border-transparent hover:bg-sky-400 hover:text-black hover:border-white" target="_blank">
-          GitHub Repo
-        </a>
-      </div>
-    </li>
-    
-    <!-- Project 2: Tic-Tac-Toe Game -->
-    <li class="p-6 bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-700 transition shadow-lg hover:scale-105">
-      <strong class="text-lg text-white">Tic-Tac-Toe Game</strong>  
-      <p class="text-gray-300 text-sm">Java, Swing</p>
-
-      <!-- GitHub Repo Button -->
-      <div class="mt-4 flex justify-center">
-        <a href="https://github.com/devAbdelrahman-Elgewily/Tic-Tac-Toe-Game" 
-           class="bg-cyan-500 text-white px-5 py-2 rounded-lg transition duration-300 shadow-md 
-                  border-2 border-transparent hover:bg-sky-400 hover:text-black hover:border-white" target="_blank">
-          GitHub Repo
-        </a>
-      </div>
-    </li>
-
-    <!-- Project 3: Data Analysis Course -->
-    <li class="p-6 bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-700 transition shadow-lg hover:scale-105">
-      <strong class="text-lg text-white">Data Analysis Course</strong>  
-      <p class="text-gray-300 text-sm">Python, Pandas, NumPy, Matplotlib, Seaborn</p>
-
-      <!-- GitHub Repo Button -->
-      <div class="mt-4 flex justify-center">
-        <a href="https://github.com/devAbdelrahman-Elgewily/DEPI-Assignments-" 
-           class="bg-teal-500 text-white px-5 py-2 rounded-lg transition duration-300 shadow-md 
-                  hover:bg-blue-400 hover:text-gray-900" target="_blank">
-          GitHub Repo
-        </a>
-      </div>
-    </li>
-  </ul>
-</section>
-
-
-
-      <!-- Contact Section -->
-<!-- Contact Section -->
+            <!-- Contact Section -->
 <section id="contact" class="dark-card bordered-section box-shadow text-center">
   <h3 class="card-title">Get in Touch</h3>
   <p class="text-gray-400 mb-4">Feel free to reach out to me via any of the platforms below.</p>
